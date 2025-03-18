@@ -1,0 +1,172 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+body{
+    background: linear-gradient(to right, pink,beige,lightblue);
+
+}
+
+.heading{
+    font-size: 25px;
+    font-weight: bold;
+    background-color: gray;
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.home{
+   
+
+    display: flex;
+    justify-content: end;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: black;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh; 
+    text-align: center;
+    gap: 20px; 
+    width: 80%;
+    max-width: 800px;
+    margin: auto; 
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+form {
+    display: block;
+    width: 300px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+form label, form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    padding: 6px;
+    border: 1px solid darkgray;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 85px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+/* Media query code so that website should be responsive in all device  */
+
+/*For landscape in desktop/laptop*/
+
+@media screen and (max-width: 1024px) {
+    main {
+        width: 90%;
+    }
+
+    .heading {
+        font-size: 22px;
+    }
+
+    .home {
+        font-size: 16px;
+    }
+
+    form {
+        max-width: 350px;
+    }
+}
+
+/*For landscape in Tablets*/
+@media screen and (max-width: 768px) {
+    body {
+        background: linear-gradient(to bottom, lightblue, beige);
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .home {
+        margin-top: 5px;
+    }
+
+    img {
+        width: 80%;
+    }
+
+    form {
+        max-width: 320px;
+    }
+
+    footer {
+        font-size: 18px;
+    }
+}
+
+
+/*For landscape in Mobile*/
+@media screen and (max-width: 480px) {
+    main {
+        width: 95%;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    .home {
+        font-size: 14px;
+    }
+
+    form {
+        max-width: 90%;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
